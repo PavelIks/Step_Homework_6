@@ -84,9 +84,57 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Animals.AnimalsDisplay("Name","Latin");
+        Animals.AnimalsDisplay("TestName","TestLatin");
         Tiger.TigerDisplay();
         Crocodile.CrocodileDisplay();
         Kangaroo.KangarooDisplay();
     }
 }*/
+
+
+/*Задание 3 Запрограммируйте класс Money (объект класса оперирует одной валютой) для работы с деньгами.
+В классе должны быть предусмотрены поле для хранения целой части денег (доллары, евро, гривны и т.д.) и
+поле для хранения копеек (центы, евроценты, копейки и т.д.). Реализовать методы для вывода суммы на экран,
+задания значений для частей. На базе класса Money создать класс Product для работы с продуктом или товаром.
+Реализовать метод, позволяющий уменьшить цену на заданное число. Для каждого из классов реализовать необходимые методы и поля.*/
+
+/*package com.company;
+import java.util.Scanner;
+class Money
+{
+    static void MoneyDisplay(int Banknote, double Coins)
+    {
+        Scanner in1 = new Scanner(System.in);
+        System.out.print("1. Введите число: ");
+        Banknote = in1.nextInt();
+        Scanner in2 = new Scanner(System.in);
+        System.out.print("2. Введите число: ");
+        Coins = in2.nextDouble();
+        System.out.println("Деньги: " + Banknote);
+        System.out.println("Монеты: " + Coins);
+    }
+}
+class Product extends Money
+{
+    static void ProductDisplay()
+    {
+        int a = 0; double b = 0;
+        Money.MoneyDisplay(a, b);
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Product.ProductDisplay();
+    }
+}*/
+
+
+/*Задание 4
+Создать базовый класс «Устройство» и производные классы «Чайник», «Микроволновка», «Автомобиль», «Пароход».
+С помощью конструктора установить имя каждого устройства и его характеристики. Реализуйте для каждого из классов методы:
+1) Sound — издает звук устройства (пишем текстом в консоль);
+2) Show — отображает название устройства;
+3) Desc — отображает описание устройства.*/
+
