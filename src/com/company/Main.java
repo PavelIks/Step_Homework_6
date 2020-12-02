@@ -131,10 +131,72 @@ public class Main
 }*/
 
 
-/*Задание 4
-Создать базовый класс «Устройство» и производные классы «Чайник», «Микроволновка», «Автомобиль», «Пароход».
+/*Задание 4 Создать базовый класс «Устройство» и производные классы «Чайник», «Микроволновка», «Автомобиль», «Пароход».
 С помощью конструктора установить имя каждого устройства и его характеристики. Реализуйте для каждого из классов методы:
 1) Sound — издает звук устройства (пишем текстом в консоль);
 2) Show — отображает название устройства;
 3) Desc — отображает описание устройства.*/
 
+package com.company;
+import java.util.Scanner;
+class Device
+{
+    static void Sound(String sound)
+    {
+        System.out.println(sound);
+    }
+    static void Show(String show)
+    {
+        System.out.println(show);
+    }
+    static void Desc(String desc)
+    {
+        System.out.println(desc);
+    }
+}
+class Kettle extends Device
+{
+    static void KettleDisplay()
+    {
+        Device.Sound("[Звук чайника]");
+        Device.Show("[Название чайника]");
+        Device.Desc("[Описание чайника]");
+    }
+}
+class Microwave extends Device
+{
+    static void MicrowaveDisplay()
+    {
+        Device.Sound("[Звук микроволновки]");
+        Device.Show("[Название микроволновки]");
+        Device.Desc("[Описание микроволновки]");
+    }
+}
+class Car extends Device
+{
+    static void CarDisplay()
+    {
+        Device.Sound("[Звук автомобиля]");
+        Device.Show("[Название автомобиля]");
+        Device.Desc("[Описание автомобиля]");
+    }
+}
+class Steamer extends Device
+{
+    static void SteamerDisplay()
+    {
+        Device.Sound("[Звук парохода]");
+        Device.Show("[Название парохода]");
+        Device.Desc("[Описание парохода]");
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Kettle.KettleDisplay();
+        Microwave.MicrowaveDisplay();
+        Car.CarDisplay();
+        Steamer.SteamerDisplay();
+    }
+}
